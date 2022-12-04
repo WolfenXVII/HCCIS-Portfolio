@@ -22,7 +22,7 @@ h1 {
 body {
     letter-spacing: 0.0625em;
     /*img generated using Stable Diffusion UI*/
-    background: url(../img/_seed-2227749_steps-35_guidance-7.5.jpeg) no-repeat center center fixed;
+    background: url(../img/steps35.jpeg) no-repeat center center fixed;
     background-size: cover;
 }
 
