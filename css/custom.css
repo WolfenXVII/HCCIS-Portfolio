@@ -1,6 +1,20 @@
+/*
+##################################################
+Author: Noel Spurrell
+Date: 2022-11-30
+Purpose: CIS-1280  Final Portfolio Project - Personal Portfolio - Custom CSS
+##################################################
+*/
+
 #mainNav {
     background-color: transparent;
     padding: 2rem 10rem;
+}
+
+#content {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 2rem;
 }
 
 h1 {
@@ -9,9 +23,14 @@ h1 {
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.8rem;
+    margin-bottom: 5rem;
 }
 
-#content {
+h1.display-4 {
+    margin-bottom: 0;
+}
+
+.container {
     text-shadow: black 0.1em 0.1em 0.2em;
     color: white;
     margin-top: 5rem;
@@ -19,10 +38,19 @@ h1 {
     margin-left: auto;
 }
 
+.black-background {
+    background-color: black;
+    border-radius: 0.25rem;
+    opacity: 75%;
+    padding: 2rem 5rem;
+    margin: 0.5rem;
+}
+
 body {
     letter-spacing: 0.0625em;
     /*img generated using Stable Diffusion UI*/
-    background: url(../img/steps35.jpeg) no-repeat center center fixed;
+    /*Black screen if background image does not load*/
+    background: url(../img/server-room-1080p.png) no-repeat center center fixed black;
     background-size: cover;
 }
 
@@ -33,16 +61,46 @@ body {
 }
 
 .divider {
-    background-color: #2c2c31;
+    background-color: #333;
     height: 0.2rem;
     max-width: 3.25rem;
     margin: 1.5rem auto;
     opacity: 1;
 }
 
-.nav-item {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+.black-button .nav-link {
+    background-color: black;
+    border-radius: 0.25rem;
+    opacity: 75%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
+
+.nav-link {
+    opacity: 100%;
+}
+
+.black-button .nav-link:hover {
+    background-color: #333;
+    opacity: 80%;
+}
+
+.social-links {
+
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.profile-picture {
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    border-radius: 50px;
+    border: 5px solid black;
+}
+
+
+
+
 
 
