@@ -3,6 +3,7 @@
 Author: Noel Spurrell
 Date: 2022-11-30
 Purpose: CIS-1280  Final Portfolio Project - Personal Portfolio - Custom CSS
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 ##################################################
 */
 
@@ -12,9 +13,18 @@ Purpose: CIS-1280  Final Portfolio Project - Personal Portfolio - Custom CSS
 }
 
 #content {
-    width: 100%;
+    min-width: 100%;
     margin-top: 5rem;
     padding: 2rem;
+}
+
+.table {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+h3{
+    font-size: x-large;
 }
 
 h1 {
@@ -26,42 +36,44 @@ h1 {
     margin-bottom: 5rem;
 }
 
+img {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 h1.display-4 {
     margin-bottom: 0;
 }
 
-.container {
+.container-lg {
     text-shadow: black 0.1em 0.1em 0.2em;
     color: white;
     margin-top: 5rem;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .black-background {
     background-color: black;
-    border-radius: 0.25rem;
     opacity: 75%;
-    padding: 2rem 5rem;
+    border-radius: 0.25rem;
+    padding: 3rem;
     margin: 0.5rem;
 }
 
 body {
     letter-spacing: 0.0625em;
     /*img generated using Stable Diffusion UI*/
-    /*Black screen if background image does not load*/
-    background: url(../img/server-room-1080p.png) no-repeat center center fixed black;
+    background: url(../img/background.png) no-repeat center center fixed;
     background-size: cover;
 }
 
 .jumbotron {
-    margin-top: 7.5rem;
+    margin-top: 5rem;
     text-align: center;
     background-color: transparent;
 }
 
 .divider {
-    background-color: #333;
+    background-color: black;
     height: 0.2rem;
     max-width: 3.25rem;
     margin: 1.5rem auto;
@@ -91,13 +103,78 @@ body {
     margin-left: 3rem;
 }
 
-.profile-picture {
+#profile-picture {
     z-index: 1;
     position: relative;
-    margin: auto;
-    border-radius: 50px;
-    border: 5px solid black;
+    border-radius: 10%;
+    margin: 2rem 1rem 1rem 2rem;
+    padding: 0;
+    max-width: 200px;
+    max-height: 200px;
+
 }
+
+.row {
+    margin: 0;
+
+}
+
+.black-background.list-group{
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.col-lg-6 {
+    margin: 0;
+    padding:0;
+}
+.col-lg-12 {
+    margin: 0;
+    padding:0;
+}
+.col-md-6 {
+    margin: 0;
+    padding:0;
+}
+
+.list-group-item-dark{
+    background-color: #333;
+    opacity: 75%;
+    color: white;
+}
+@media (max-width: 1400px) {
+    #mainNav {
+        padding: 2rem 5rem;
+    }
+    #content {
+        padding: 2rem 5rem;
+    }
+}
+@media (max-width: 991px) {
+    #profile-picture {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    #mainNav {
+        padding: 2rem;
+    }
+}
+@media (max-width: 576px) {
+    #mainNav {
+        padding: 2rem 1rem;
+    }
+}
+@media (max-width: 430px) {
+     .container-lg {
+        margin-top: 10rem;
+    }
+
+}
+
+
+
+
 
 
 

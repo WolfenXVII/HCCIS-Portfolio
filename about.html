@@ -4,29 +4,33 @@
   Author: Noel Spurrell
   Date: 2022-11-30
   Purpose: CIS-1280  Final Portfolio Project - Personal Portfolio - About Page
+  License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 ##################################################
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="My personal portfolio website created using HTML, CSS & Bootstrap.">
+    <meta name="keywords" content="Wolfen, Portfolio, Noel Spurrell, Custom Website">
+    <meta name="author" content="Noel Spurrell">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Wolfen's Portfolio" />
-    <meta property="og:type" content="website" />
+    <!--tags taken from stackoverflow-->
+    <meta property="og:title" content="Wolfen | Portfolio"/>
+    <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://wolfenxvii.uk/"/>
     <meta property="og:image" content="https://i.imgur.com/NBa7N3K.jpeg"/>
-    <meta property="og:description" content="My personal portfolio" />
-    <meta name="theme-color" content="#FF0000">
-    <!-- Include this to make the og:image larger -->
+    <meta property="og:description" content="My personal portfolio website"/>
+    <meta name="theme-color" content="#00dcff">
     <meta name="twitter:card" content="summary_large_image">
     <title>Wolfen | About</title>
     <!--img generated using Stable Diffusion UI-->
-    <link rel="icon" type="image/x-icon" href="img/wolf-logo.png"/>
+    <link rel="icon" type="image/x-icon" href="img/wolf.png"/>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="mainNav">
+<div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <a class="navbar-brand" href="index.html">Home</a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item black-button">
@@ -45,21 +49,64 @@
     </nav>
     <h1 class="text-center">About</h1>
     <section id="content">
-        <div class="row">
-            <div class="col-sm-4">
-                <img class="profile-picture" src="" alt="My profile picture">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 float-lg-none"><img id="profile-picture" class="card-img-overlay float-lg-left"
+                                                      src="img/profile-picture.jpg"
+                                                      alt="My profile picture">
+                <div class="black-background">
+                    <h2>Hello, World!</h2>
+                    <p>My name is Noel Spurrell (aka Wolfen), and I'm a Computer Information Systems (CIS)
+                        student. I
+                        have a passion for creating and building things,
+                        whether it's programming, art, games, or other projects. I'm a hard worker,
+                        and I'm always looking for new challenges and opportunities to learn and grow.</p></div>
             </div>
-        </div>
 
-
-        <div class="col-sm-6">
-            <div class="black-background">
-                <h2>Hello, World!</h2>
-                <p>My name is YOUR_NAME, and I'm a college student. I
-                    have a passion for creating and
-                    building things, whether it's software, games, or other projects. I'm always looking for new
-                    challenges and opportunities to learn and grow. I'm a quick learner and a hard worker, and I'm
-                    always looking to improve myself and my skills.</p>
+            <div class="col-lg-6 col-md-6 float-lg-left">
+                <div class="black-background">
+                    <table class="table-responsive-lg table container-fluid">
+                        <thead>
+                        <tr>
+                            <th scope="col">Languages</th>
+                            <th scope="col">Tools</th>
+                            <th scope="col">OS</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>IntelliJ</td>
+                            <td>Windows</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Netbeans</td>
+                            <td>Linux</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>GitHub</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Markdown</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 float-lg-right">
+                <div class="black-background">
+                    <h2>Skills</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-dark"> > Web Development</li>
+                        <li class="list-group-item list-group-item-dark"> > Object-Oriented Programming</li>
+                        <li class="list-group-item list-group-item-dark"> > Windows & Linux Operating Systems</li>
+                        <li class="list-group-item list-group-item-dark"> > Basic Networking</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
