@@ -63,7 +63,7 @@ h1.display-4 {
 body {
     letter-spacing: 0.0625em;
     /*img generated using Stable Diffusion UI*/
-    background: url(../img/background.png) no-repeat center center fixed;
+    background: url(../img/background.png) no-repeat center center fixed #333;
     background-size: cover;
 }
 
@@ -112,7 +112,6 @@ body {
     padding: 0;
     max-width: 200px;
     max-height: 200px;
-
 }
 
 .row {
