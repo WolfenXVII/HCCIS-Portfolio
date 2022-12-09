@@ -12,20 +12,21 @@ License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
     padding: 2rem 10rem;
 }
 
-#content {
-    min-width: 100%;
-    margin-top: 5rem;
-    padding: 2rem;
-}
-.table {
-    text-align: center;
-    margin: auto;
-    color: white;
+#profile-picture {
+    z-index: 1;
+    position: relative;
+    border-radius: 10%;
+    margin: 2rem 1rem 1rem 2rem;
+    padding: 0;
+    max-width: 200px;
+    max-height: 200px;
 }
 
-.footer{
-    bottom: 0;
-    width: 100%;
+body {
+    letter-spacing: 0.0625em;
+    /*img generated using Stable Diffusion UI*/
+    background: url(../img/background.png) no-repeat center center fixed black;
+    background-size: cover;
 }
 
 h1 {
@@ -40,6 +41,17 @@ h1 {
 img {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+.table {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
 }
 
 h1.display-4 {
@@ -58,13 +70,6 @@ h1.display-4 {
     border-radius: 0.25rem;
     padding: 3rem;
     margin: 0.5rem;
-}
-
-body {
-    letter-spacing: 0.0625em;
-    /*img generated using Stable Diffusion UI*/
-    background: url(../img/background.png) no-repeat center center fixed #333;
-    background-size: cover;
 }
 
 .jumbotron {
@@ -104,149 +109,166 @@ body {
     margin-left: 3rem;
 }
 
-#profile-picture {
-    z-index: 1;
-    position: relative;
-    border-radius: 10%;
-    margin: 2rem 1rem 1rem 2rem;
-    padding: 0;
-    max-width: 200px;
-    max-height: 200px;
-}
-
 .row {
     margin: 0;
 
 }
 
-.black-background.list-group{
+.black-background.list-group {
     margin: 0 auto;
     max-width: 50%;
 }
 
 .col-lg-6 {
     margin: 0;
-    padding:0;
-}
-.col-lg-12 {
-    margin: 0;
-    padding:0;
-}
-.col-md-6 {
-    margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-.list-group-item-dark{
+.col-lg-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-6 {
+    margin: 0;
+    padding: 0;
+}
+
+.list-group-item-dark {
     background-color: #333;
     opacity: 75%;
     color: white;
 }
-.display-4{
+
+.display-4 {
     margin-top: -5rem;
 }
+
 @media (max-width: 1400px) {
     #mainNav {
         padding: 2rem 5rem;
     }
+
     #content {
         padding: 2rem 5rem;
     }
 }
+
 @media (max-width: 991px) {
     #profile-picture {
         display: none;
     }
+
     .display-4 {
         margin-top: 0;
     }
 }
+
 @media (max-width: 768px) {
     #mainNav {
         padding: 2rem;
     }
 }
+
 @media (max-width: 591px) {
+    #mainNav {
+        padding: 2rem 1rem;
+    }
+
     .social-links {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    #mainNav {
-        padding: 2rem 1rem;
-    }
+
 }
 
 @media (max-width: 495px) {
-    .display-4{
+    .display-4 {
         margin-top: -5rem;
     }
-     .container-lg {
+
+    .container-lg {
         margin-top: 10rem;
-         font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-    .social-links{
+
+    .social-links {
         margin-right: 1rem;
         margin-left: 1rem;
     }
 
 }
+
 @media (max-width: 400px) {
     .container-lg {
         font-size: 0.7rem;
     }
-    .social-links{
+
+    .social-links {
         margin-right: 0.5rem;
         margin-left: 0.5rem;
     }
 }
+
 @media (max-width: 378px) {
     .container-lg {
         margin-top: 10rem;
     }
-    .social-links{
+
+    .social-links {
         margin-right: 0.5rem;
         margin-left: 0.5rem;
     }
 }
 
 @media (max-width: 349px) {
+    h3 {
+        font-size: 1.25rem;
+    }
+
     .container-lg {
         font-size: 0.5rem;
     }
-    .h2{
+
+    .h2 {
         font-size: 1.5rem;
     }
-    h3{
-        font-size: 1.25rem;
-    }
-    .social-links{
+
+    .social-links {
         margin-right: 0.5rem;
         margin-left: 0.5rem;
     }
 }
 
 @media (max-width: 280px) {
-    .contact-logo{
-        display: none;
-    }
-    h1{
+
+    h1 {
         font-size: 2rem;
         text-align: center;
     }
-    .h2{
-        font-size: 1.5rem;
-    }
-    h3{
-        font-size: 1rem;
-    }
-    .social-links{
-        margin-right: 0.6rem;
-        margin-left: 0.6rem;
-    }
+
     a {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-logo {
+        display: none;
+    }
+
+    .social-links {
+        margin-right: 0.6rem;
+        margin-left: 0.6rem;
+    }
+
 }
 
 
